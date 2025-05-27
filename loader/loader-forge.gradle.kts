@@ -71,7 +71,7 @@ tasks.named<ShadowJar>("shadowJar") {
     relocate("org.apache.hc", "${reloc}.org.apache.hc")
     relocate("org.checkerframework", "${reloc}.org.checkerframework")
     relocate("org.slf4j", "${reloc}.org.slf4j")
-//    relocate("com.github.luben", "${reloc}.com.github.luben") // cant relocate - natives
+    relocate("com.github.luben", "${reloc}.com.github.luben") // cant relocate - natives
     relocate("org.bouncycastle", "${reloc}.org.bouncycastle")
 
     if (project.name.contains("neoforge")) {
