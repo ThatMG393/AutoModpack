@@ -53,8 +53,7 @@ tasks.named<ShadowJar>("shadowJar") {
         )
     }
 
-    enableRelocation = true
-    relocationPrefix = "automodpack.deps"
+    relocate("com.github.luben", "automodpack.deps.com.github.luben")
 }
 
 tasks.named("assemble") {
