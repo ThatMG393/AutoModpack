@@ -52,6 +52,9 @@ tasks.named<ShadowJar>("shadowJar") {
             "Main-Class" to "pl.skidam.automodpack_core.Server"
         )
     }
+
+    enableRelocation = true
+    relocationPrefix = "automodpack.deps"
 }
 
 tasks.named("assemble") {
